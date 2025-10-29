@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@theme {
+  --color-primary: #4e1c75;
+  --color-secondary: #241b45;
+  --color-tetiary: #e817db;
+}
+
+body {
+  background: #241b45;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+button:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+}
