@@ -105,7 +105,7 @@ const ProjectSection = () => {
           <motion.a
             key={index}
             href={project.preview}
-            target:"_blank"
+            target="_blank"
             className="flex cursor-pointer flex-col border border-[rgba(255,255,255,0.2)] rounded-[10px] overflow-hidden hover:shadow-xl hover:shadow-[rgba(255,255,255,0.05)] transition-shadow"
             variants={cardVariants}
             whileHover={{ y: -6, scale: 1.02 }}
