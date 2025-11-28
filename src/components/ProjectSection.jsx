@@ -43,24 +43,28 @@ const ProjectSection = () => {
       category: "E-commerce Mobile App",
       desc: "An automotive e-commerce app where users can easily explore, compare, and purchase vehicles online",
       screenShot: bgOne,
+      preview:"https://www.figma.com/design/v85H4Y9r0fMzPzu4KVrl9r/Drizzy-Auto?node-id=0-1&t=UHRIb3rwmG3KMdnB-1",
     },
     {
       name: "Mobile Design",
       category: "Ebook Mobile Design",
       desc: "A clean and accessible interface for browsing, downloading, and reading books on the go",
       screenShot: bgTwo,
+      preview:"https://www.figma.com/design/Mx5KvGyC8ANPxve8ewCzjb/lautech-manual?node-id=51-212&t=Czw8f0lnhL4Ve36X-1",
     },
     {
       name: "Website Design",
       category: "NGO Website Design",
       desc: "A user-friendly website designed to help a non-profit organization communicate their mission and increase donation engagement.",
       screenShot: bgThree,
+      preview:"https://www.figma.com/design/vfiwe6usZ37EYW8pjevOpv/Mastermind?node-id=0-1&t=nhBJgpQnJyML7ykd-1",
     },
     {
       name: "Website Design",
       category: "Sport News & Update Website",
       desc: "An automotive e-commerce app where users can easily explore, compare, and purchase vehicles online",
       screenShot: bgFour,
+      preview:"https://www.figma.com/design/HZie9pGDcbtzCRJeCkJMrP/Drizzy-fc?node-id=0-1&t=6jyt3ApCFK2QgL6p-1",
     },
     {
       name: "Investment Dashoard",
@@ -98,8 +102,10 @@ const ProjectSection = () => {
         variants={container}
       >
         {projects.map((project, index) => (
-          <motion.div
+          <motion.a
             key={index}
+            href={project.preview}
+            target:"_blank"
             className="flex cursor-pointer flex-col border border-[rgba(255,255,255,0.2)] rounded-[10px] overflow-hidden hover:shadow-xl hover:shadow-[rgba(255,255,255,0.05)] transition-shadow"
             variants={cardVariants}
             whileHover={{ y: -6, scale: 1.02 }}
@@ -123,7 +129,7 @@ const ProjectSection = () => {
                 {project.desc}
               </motion.p>
             </motion.div>
-          </motion.div>
+          </motion.a>
         ))}
       </motion.div>
     </motion.section>
