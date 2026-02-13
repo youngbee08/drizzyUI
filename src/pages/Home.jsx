@@ -21,13 +21,13 @@ const Home = () => {
           <AboutSection />
         </div>
         <div className="px-8 sm:px-12 lg:px-17 py-2 sm:py-4 lg:py-7  ">
+          <ProjectSection />
+        </div>
+        <div className="px-8 sm:px-12 lg:px-17 py-2 sm:py-4 lg:py-7  ">
           <ServicesSection />
         </div>
         <div className="px-8 sm:px-12 lg:px-17 py-2 sm:py-4 lg:py-7  ">
           <SkillsSection />
-        </div>
-        <div className="px-8 sm:px-12 lg:px-17 py-2 sm:py-4 lg:py-7  ">
-          <ProjectSection />
         </div>
         <div className="px-8 sm:px-12 lg:px-17 py-2 sm:py-4 lg:py-7  ">
           <ReviewSection />
@@ -36,7 +36,7 @@ const Home = () => {
           <ContactSection />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
