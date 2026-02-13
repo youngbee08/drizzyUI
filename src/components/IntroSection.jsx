@@ -68,7 +68,7 @@ const IntroSection = () => {
             custom={1}
           >
             I create clean, functional interfaces that turn ideas into seamless
-            experiences. With 2+ years of experience in design systems and user
+            experiences. With 3+ years of experience in design systems and user
             research.
           </motion.p>
         </motion.div>

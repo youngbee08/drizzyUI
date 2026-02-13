@@ -10,7 +10,7 @@ const AboutSection = () => {
   const details = [
     {
       icon: FaRegCalendarAlt,
-      detailNo: 2,
+      detailNo: 3,
       detailName: "Years of experience",
     },
     {
@@ -137,7 +137,9 @@ const AboutSection = () => {
                 <detail.icon className="text-sm sm:text-base lg:text-[20px]" />
               </div>
               <div className="flex flex-col items-center">
-                <h3 className="text-base sm:text-[30px] lg:text-[40px] font-medium">{detail.detailNo}+</h3>
+                <h3 className="text-base sm:text-[30px] lg:text-[40px] font-medium">
+                  {detail.detailNo}+
+                </h3>
                 <h4 className="text-xs sm:text-base text-center lg:text-[22px] font-medium text-[rgba(255,_255,_255,_0.7)]">
                   {detail.detailName}
                 </h4>
